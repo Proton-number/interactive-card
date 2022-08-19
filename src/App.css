@@ -1,41 +1,618 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+*{
+  box-sizing: border-box;
+  margin: 0;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+body{
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  place-content: center;
+  background-image: url('/src/images/bg-main-mobile.png');
+  background-repeat: no-repeat;
+  background-size: 100% ;
+  position: relative;
+  background-color: white;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.container{
+  /* display: none */
+}
+
+.back-of-card img{
+position: absolute;
+width: 65%;
+left: 99px;
+top: 48px;
+}
+
+.back-of-card p{
+position: absolute;
+bottom:401px;
+left: 278px;
+opacity: 70%;
+font-size: 12px;
+color: white;
+}
+
+
+.front-of-card .information{
+  position: absolute;
+  width: 65%;
+  top: 134px;
+  left: 34px;
+  box-shadow: 17px 4px 60px rgb(37, 37, 37);
   }
-  to {
-    transform: rotate(360deg);
+
+.front-of-card .logo{
+  position: absolute;
+  width: 12%;
+  top: 150px;
+  left: 45px;
+  }
+
+
+ .card-number{
+    position: absolute;
+    top: 194px;
+    left: 75px;
+    color: white;
+    opacity: 80%;
+  }
+
+.Card-bottom{
+  position: absolute;
+  top: 226px;
+  left: 52px;
+  display: flex;
+}
+
+  .Card-bottom p{
+    text-transform: uppercase;
+    font-size: 12px;
+    color: white;
+    opacity: 80%;
+  }
+ 
+    .dates{
+    position: absolute;
+  top:1px;
+  left: 160px;
+  display: flex;
+  font-size: 12px;
+  } 
+  .dates p{
+    color: white;
+    opacity: 80%;
+  } 
+
+
+
+  /* SCREEN SIZE FOR 280PX and 290px */
+  @media screen and (min-width:280px) and (max-width:290px){
+
+    .back-of-card img{
+      position: absolute;
+      width: 65%;
+      left: 82px;
+      top: 40px;
+      }
+
+  .back-of-card p{
+    position: absolute;
+    top:77px;
+    left: 220px;
+    opacity: 40%;
+    font-size: 12px;
+    color: white;
+    }
+
+    
+      .front-of-card .information{
+        position: absolute;
+        width: 65%;
+        top: 102px;
+        left: 34px;
+        box-shadow: 17px 4px 60px rgb(37, 37, 37);
+        }
+    
+    
+        .front-of-card .logo{
+          position: absolute;
+          width: 10%;
+          top: 115px;
+          left: 40px;
+          
+          }
+        
+         .card-number{
+            position: absolute;
+            top: 145px;
+            left: 52px;
+            color: rgb(255, 255, 255);
+            opacity: 70%;
+          }
+          .card-number h4{
+            font-size: 12px;
+          }
+        
+        .Card-bottom{
+          position: absolute;
+          top: 178px;
+          left: 42px;
+        }
+        
+          .Card-bottom p{
+            text-transform: uppercase;
+            font-size: 10px;
+            color: white;
+            opacity: 80%;
+          }
+        
+          .dates{
+            position: absolute;
+          top:1px;
+          left: 135px;
+          display: flex;
+          font-size: 12px;
+          } 
+
+          .year{
+            position: absolute;
+            left: 13px;
+          }
+         
+      }
+
+
+      /* FOR IPHONE 5 */
+      @media  screen and (min-width:320px) and (max-width:568px) {
+             
+  .back-of-card p{
+    position: absolute;
+    top:92px;
+    left: 258px;
+    opacity: 70%;
+    font-size: 12px;
+    color: white;
+    }
+
+    .card-number{
+      position: absolute;
+      top: 184px;
+      left: 40px;
+      color: white;
+      opacity: 80%;
+    }
+
+
+
+    .Card-bottom{
+      position: absolute;
+      top:218px;
+      left: 42px;
+    }
+    
+      .Card-bottom p{
+        text-transform: uppercase;
+        font-size: 10px;
+        color: white;
+        opacity: 80%;
+      }
+    
+      .dates{
+        position: absolute;
+      top:1px;
+      left: 155px;
+      display: flex;
+      font-size: 12px;
+      } 
+
+
+      }
+    
+
+      /* SCREENS FOR 360PX  */
+    @media screen and (min-width:360px) and (max-width:760px)  {
+      
+  .back-of-card p{
+    position: absolute;
+    top:99px;
+    left: 282px;
+    opacity: 70%;
+    font-size: 12px;
+    color: white;
+    }
+
+    .card-number{
+      position: absolute;
+      top: 184px;
+      left: 60px;
+      color: white;
+      opacity: 80%;
+    }
+
+
+
+    .Card-bottom{
+      position: absolute;
+      top:218px;
+      left: 60px;
+    }
+    
+      .Card-bottom p{
+        text-transform: uppercase;
+        font-size: 10px;
+        color: white;
+        opacity: 80%;
+      }
+    
+      .dates{
+        position: absolute;
+      top:1px;
+      left: 155px;
+      display: flex;
+      font-size: 12px;
+      } 
+
+
+
+
+    }
+
+    /* FOR SCREENS 375PX */
+    @media screen and (min-width:375px) and (max-width:812px){
+      .card-number{
+        position: absolute;
+        top: 192px;
+        left: 60px;
+        color: white;
+        opacity: 80%;
+      }
+      .year{
+        position: absolute;
+        left: 13px;
+      }
+    }
+
+
+  /* SCREENS FOR 390PX */
+  @media screen and (min-width:390px)  {
+       
+  .back-of-card p{
+    position: absolute;
+    top:104px;
+    left: 282px;
+    opacity: 70%;
+    font-size: 12px;
+    color: white;
+    }
+
+    .card-number{
+      position: absolute;
+      top: 199px;
+      left: 60px;
+      color: white;
+      opacity: 80%;
+    }
+
+    .dates{
+      position: absolute;
+    top:1px;
+    left: 160px;
+    display: flex;
+    font-size: 12px;
+    } 
+    
+
+}
+
+  
+
+
+/* SCREENS 400PX BELLOW */
+@media screen and (min-width:400px) {
+
+  .card-number{
+    position: absolute;
+    top: 199px;
+    left: 68px;
+    color: white;
+    opacity: 80%;
+  }
+
+  .back-of-card p{
+    position: absolute;
+    top:107px;
+    left: 294px;
+    opacity: 70%;
+    font-size: 12px;
+    color: white;
+    }
+
+    .Card-bottom{
+      position: absolute;
+      top:240px;
+      left: 68px;
+    }
+  
+    .dates{
+      position: absolute;
+    top:1px;
+    left: 160px;
+    display: flex;
+    font-size: 12px;
+    } 
+    
+}
+
+/* SCREEN SIZE FOR 683PX */
+@media screen and (min-width:600px)  {
+  
+   
+body{
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  place-content: center;
+  background-image: url('/src/images/bg-main-mobile.png');
+  background-repeat: no-repeat;
+  background-size: 100% 23%;
+  position: relative;
+}
+
+.back-of-card img{
+position: absolute;
+width: 48%;
+left: 288px;
+top: 18px;
+}
+
+.back-of-card p{
+position: absolute;
+top:96px;
+left: 530px;
+opacity: 60%;
+font-size: 16px;
+color: white;
+}
+
+
+.front-of-card  .information{
+  position: absolute;
+  width: 48%;
+  top: 122px;
+  left: 200px;
+  box-shadow: 17px 4px 60px rgb(37, 37, 37);
+  }
+
+.front-of-card .logo{
+  position: absolute;
+  width: 8%;
+  top: 140px;
+  left: 216px;
+  }
+
+ .card-number{
+    position: absolute;
+    top: 199px;
+    left: 220px;
+    color: white;
+    opacity: 80%;
+  }
+ 
+  .card-number h4{
+    font-size: 24px;
+  }
+
+.Card-bottom{
+  position: absolute;
+  top: 240px;
+  left: 226px;
+}
+
+  .Card-bottom p{
+    text-transform: uppercase;
+    font-size: 14px;
+    color: white;
+    opacity: 80%;
+  }
+
+  .dates{
+    position: absolute;
+  top:1px;
+  left: 230px;
+  display: flex;
+  font-size: 12px;
+  } 
+  
+  .dates p{
+    color: white;
+    opacity: 80%;
+  } 
+
+  .year{
+    position: absolute;
+    left: 18px;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+
+  /* FOR DESKTOP SCREENS */
+
+  @media screen and (min-width:760px)  {
+
+body{
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  place-content: center;
+  background-image: url('/src/images/bg-main-desktop.png');
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: 32% 100%;
+}
+
+
+.back-of-card img{
+  position: absolute;
+  width: 25%;
+  left: 250px;
+  top: 350px;
+  box-shadow: 17px 20px 60px rgb(37, 37, 37);
   }
+  
+  .back-of-card p{
+  position: absolute;
+  top:432px;
+  left: 520px;
+  opacity: 40%;
+  font-size: 15px;
+  color: white;
+  }
+
+.front-of-card .information{
+  position: absolute;
+  width: 25%;
+  top: 134px;
+  left: 180px;
+  box-shadow: 17px 20px 60px rgb(37, 37, 37);
+  }
+
+.front-of-card .logo{
+  position: absolute;
+  width: 4%;
+  top: 150px;
+  left: 200px;
+  
+  }
+
+ .card-number{
+    position: absolute;
+    top: 218px;
+    left: 208px;
+    right:0px;
+    color: white;
+    opacity: 70%;
+  }
+
+  .card-number h4{
+    font-size: 24px;
+  }
+
+.Card-bottom{
+  position: absolute;
+  top: 276px;
+  left: 200px;
 }
 
-.card {
-  padding: 2em;
+  .Card-bottom p{
+    text-transform: uppercase;
+    font-size: 15px;
+    color: white;
+    opacity: 70%;
+  }
+
+   .dates{
+    position: absolute;
+  left: 257px;
+  display: flex;
+  }
+  .dates p{
+    color: white;
+    opacity: 70%;
+  } 
+
+  .year{
+    position: absolute;
+    left: 19px;
+  }
+
+  }
+
+
+  /* SCREENS FOR IPADS */
+    @media  screen and (min-width:800px) and (max-width: 1080px) { 
+  
+body{
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  place-content: center;
+  background-image: url('/src/images/bg-main-mobile.png');
+  background-repeat: no-repeat;
+  background-size: 100% ;
+  position: relative;
 }
 
-.read-the-docs {
-  color: #888;
+.back-of-card img{
+position: absolute;
+width: 58%;
+left: 267px;
+top: 221px;
 }
+
+.back-of-card p{
+position: absolute;
+top:335px;
+left: 621px;
+opacity: 70%;
+font-size: 16px;
+color: white;
+}
+
+
+.front-of-card .information{
+  position: absolute;
+  width: 58%;
+  top: 376px;
+  left: 141px;
+  box-shadow: 17px 4px 60px rgb(37, 37, 37);
+  }
+
+.front-of-card .logo{
+  position: absolute;
+  width: 10%;
+  top: 394px;
+  left: 162px;
+  }
+
+ .card-number{
+    position: absolute;
+    top: 488px;
+    left: 182px;
+    color: white;
+    opacity: 80%;
+  }
+ 
+  .card-number h4{
+    font-size: 32px;
+  }
+
+.Card-bottom{
+  position: absolute;
+  top: 557px;
+  left: 171px;
+}
+
+  .Card-bottom p{
+    text-transform: uppercase;
+    font-size: 16px;
+    color: white;
+    opacity: 80%;
+  }
+
+  .dates{
+    position: absolute;
+  top:1px;
+  left: 340px;
+  display: flex;
+  font-size: 12px;
+  } 
+  
+  .dates p{
+    color: white;
+    opacity: 80%;
+  } 
+      }   
