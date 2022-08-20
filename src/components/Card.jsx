@@ -16,7 +16,7 @@ function Card() {
    <>
     <div className='container'>
       
-      <div className="back-of-card">
+       <div className="back-of-card">
         <motion.img 
         initial={{x:'300vw'}}
         animate={{x:0}}
@@ -54,7 +54,7 @@ function Card() {
          animate={{opacity:1}}
          transition={{delay:1.6}}
         className='logo' src={logo} alt="Card-Logo" />
-        </div>
+        </div>  
 
         <motion.div 
          initial={{opacity:0}}

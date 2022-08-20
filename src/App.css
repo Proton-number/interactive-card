@@ -5,6 +5,7 @@
 
 body{
   height: 100vh;
+  width: 100%;
   display: grid;
   justify-content: center;
   place-content: center;
@@ -14,36 +15,41 @@ body{
   position: relative;
   background-color: white;
   font-family: 'Space Grotesk', sans-serif;
+  color: rgb(5, 5, 5);
 }
 
 .container{
   /* display: none */
 }
 
+
 .back-of-card img{
-position: absolute;
-width: 65%;
-left: 99px;
-top: 48px;
-}
+  position: absolute;
+  width: 65%;
+  left: 99px;
+  top: 48px;
+  }
 
-.back-of-card p{
-position: absolute;
-bottom:401px;
-left: 278px;
-opacity: 70%;
-font-size: 12px;
-color: white;
-}
 
+
+  .back-of-card p{
+    position: absolute;
+    bottom:401px;
+    left: 278px;
+    opacity: 70%;
+    font-size: 12px;
+    color: white;
+    }
 
 .front-of-card .information{
-  position: absolute;
+  position: fixed;
   width: 65%;
   top: 134px;
   left: 34px;
   box-shadow: 17px 4px 60px rgb(37, 37, 37);
   }
+
+
 
 .front-of-card .logo{
   position: absolute;
@@ -52,40 +58,44 @@ color: white;
   left: 45px;
   }
 
+ 
 
  .card-number{
-    position: absolute;
-    top: 194px;
-    left: 75px;
-    color: white;
-    opacity: 80%;
-  }
+  position: absolute;
+  top: 200px;
+  right: 140px;
+  color: rgb(14, 12, 12);
+  opacity: 80%;
+}
+
 
 .Card-bottom{
   position: absolute;
-  top: 226px;
-  left: 52px;
   display: flex;
 }
 
-  .Card-bottom p{
-    text-transform: uppercase;
-    font-size: 12px;
-    color: white;
-    opacity: 80%;
-  }
- 
-    .dates{
-    position: absolute;
-  top:1px;
-  left: 160px;
-  display: flex;
+
+
+.Card-bottom p{
+  text-transform: uppercase;
   font-size: 12px;
-  } 
-  .dates p{
-    color: white;
-    opacity: 80%;
-  } 
+  color: white;
+  opacity: 80%;
+}
+
+.dates{
+  position: absolute;
+top:1px;
+left: 160px;
+display: flex;
+font-size: 12px;
+} 
+.dates p{
+  color: white;
+  opacity: 80%;
+} 
+
+
 
 
 
@@ -95,9 +105,9 @@ color: white;
     .back-of-card img{
       position: absolute;
       width: 65%;
-      left: 82px;
+      left: 78px;
       top: 40px;
-      }
+      } 
 
   .back-of-card p{
     position: absolute;
@@ -128,8 +138,8 @@ color: white;
         
          .card-number{
             position: absolute;
-            top: 145px;
-            left: 52px;
+            top: 139px;
+            right: 94px;
             color: rgb(255, 255, 255);
             opacity: 70%;
           }
@@ -166,9 +176,9 @@ color: white;
       }
 
 
-      /* FOR IPHONE 5 */
+      /* FOR IPHONE 5 
       @media  screen and (min-width:320px) and (max-width:568px) {
-             
+              
   .back-of-card p{
     position: absolute;
     top:92px;
@@ -210,10 +220,10 @@ color: white;
       } 
 
 
-      }
+      }*/
     
 
-      /* SCREENS FOR 360PX  */
+      /* SCREENS FOR 360PX  
     @media screen and (min-width:360px) and (max-width:760px)  {
       
   .back-of-card p{
@@ -256,12 +266,12 @@ color: white;
       font-size: 12px;
       } 
 
+    }*/
 
 
 
-    }
 
-    /* FOR SCREENS 375PX */
+    /* FOR SCREENS 375PX 
     @media screen and (min-width:375px) and (max-width:812px){
       .card-number{
         position: absolute;
@@ -274,10 +284,10 @@ color: white;
         position: absolute;
         left: 13px;
       }
-    }
+    }*/
 
 
-  /* SCREENS FOR 390PX */
+  /* SCREENS FOR 390PX 
   @media screen and (min-width:390px)  {
        
   .back-of-card p{
@@ -306,12 +316,12 @@ color: white;
     } 
     
 
-}
+}*/
 
   
 
 
-/* SCREENS 400PX BELLOW */
+/* SCREENS 400PX BELLOW 
 @media screen and (min-width:400px) {
 
   .card-number{
@@ -345,9 +355,9 @@ color: white;
     font-size: 12px;
     } 
     
-}
+}*/
 
-/* SCREEN SIZE FOR 683PX */
+/* SCREEN SIZE FOR 683PX 
 @media screen and (min-width:600px)  {
   
    
@@ -436,10 +446,10 @@ color: white;
     position: absolute;
     left: 18px;
   }
-}
+}*/
 
 
-  /* FOR DESKTOP SCREENS */
+  /* FOR DESKTOP SCREENS 
 
   @media screen and (min-width:760px)  {
 
@@ -457,7 +467,7 @@ body{
 
 .back-of-card img{
   position: absolute;
-  width: 25%;
+  width: 5%;
   left: 250px;
   top: 350px;
   box-shadow: 17px 20px 60px rgb(37, 37, 37);
@@ -529,10 +539,10 @@ body{
     left: 19px;
   }
 
-  }
+  }*/
 
 
-  /* SCREENS FOR IPADS */
+  /* SCREENS FOR IPADS 
     @media  screen and (min-width:800px) and (max-width: 1080px) { 
   
 body{
@@ -615,4 +625,4 @@ color: white;
     color: white;
     opacity: 80%;
   } 
-      }   
+      }    */
