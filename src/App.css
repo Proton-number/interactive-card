@@ -34,7 +34,7 @@ body{
 }
 
 .front-of-card{
-  position: absolute;
+  position: fixed;
   top: 133px;
    right: -230px;
   font-size: 12px;
@@ -54,7 +54,7 @@ body{
    }
 
    .front-of-card{
-    position: absolute;
+    position: fixed;
     top: 133px;
      right: -266px;
     font-size: 12px;
@@ -74,7 +74,7 @@ body{
   }
 
   .front-of-card{
-    position: absolute;
+    position: fixed;
     top: 133px;
      right: -224px;
     font-size: 12px;
@@ -101,6 +101,13 @@ body{
     bottom: 43px;
     left: 123px;
   }
+
+  .front-of-card{
+    position: fixed;
+    top: 140px;
+     right: -224px;
+    font-size: 12px;
+  }
 }
 
 @media screen and (min-width:400px)  {
@@ -111,7 +118,7 @@ body{
   }
 
   .front-of-card{
-    position: absolute;
+    position: fixed;
     top: 140px;
      right: -224px;
     font-size: 12px;
@@ -126,7 +133,7 @@ body{
 }
 
 .back-of-card{
-  position: absolute;
+  position: fixed;
   top: 80px;
   margin-right: 21px;
   font-size: 16px;
@@ -139,7 +146,6 @@ body{
 }
 
 .front-of-card{
-  position: absolute;
   top: 193px;
    right: -14px;
   font-size: 12px;
@@ -150,7 +156,7 @@ body{
 }
 
 
-}
+} 
 
 @media screen and (min-width:760px){
   body{
@@ -224,7 +230,7 @@ body{
   }
 
   .front-of-card{
-    position: absolute;
+    position: fixed;
     top: 206px;
      right: 126px;
     font-size: 12px;
@@ -236,4 +242,4 @@ body{
 
 
 }
-
+ 
