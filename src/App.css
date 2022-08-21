@@ -99,36 +99,157 @@ width: 73%;
 
 @media screen and (min-width:375px) and (max-width:812px){
 
+  .container{
+    font-size: 18px;
+  }
+
+
+  .back-of-card{
+    position: absolute;
+    left: 100px;
+    top: 90px;
+    }
+    .back-of-card img{
+    width: 90%;
+    }
+   
    
   .back-of-card p{
     position: absolute;
-  top: 48px;
-  left: 155px;
+  top: 54px;
+  left: 168px;
   }
 
   .front-of-card{
     position: absolute;
-    top: 106px;
-    left: 72px;
+    top: 170px;
+    left: 52px;
+  }
+
+  .front-of-card img{
+    width: 77%;
   }
 
 }
 
-@media screen and (min-width:400px)  {
-  
-   
+
+@media screen and (min-width:380px)  {
+ 
   .back-of-card p{
     position: absolute;
-  top: 53px;
-  left: 175px;
+  top: 56px;
+  left: 168px;
   }
 
   .front-of-card{
     position: absolute;
-    top: 111px;
-    left: 72px;
+    top: 178px;
+    left: 52px;
+  }
+
+}
+
+@media screen and (min-width:390px)  {
+  .back-of-card p{
+    position: absolute;
+  top: 58px;
+  left: 178px;
+  }
+
+}
+
+
+@media screen and (min-width:400px)  {
+  
+  .back-of-card{
+    position: absolute;
+    left: 120px;
+    top: 90px;
+    }
+    .back-of-card img{
+    width: 89%;
+    }
+   
+  .back-of-card p{
+    position: absolute;
+  top: 54px;
+  left: 178px;
+  }
+
+  .front-of-card{
+    position: absolute;
+    top: 179px;
+    left: 50px;
+  }
+
+  .front-of-card img{
+    width: 75%;
   }
   
+}
+
+@media screen and (min-width:420px){
+
+  .back-of-card p{
+    position: absolute;
+  top: 59px;
+  left: 178px;
+  }
+
+}
+
+@media screen and (min-width:420px){
+  .back-of-card{
+    position: absolute;
+    left: 120px;
+    top: 100px;
+    }
+    .back-of-card img{
+    width: 89%;
+    }
+   
+  .back-of-card p{
+    position: absolute;
+  top: 67px;
+  left: 194px;
+  }
+
+  .front-of-card{
+    position: absolute;
+    top: 199px;
+    left: 50px;
+  }
+
+  .front-of-card img{
+    width: 75%;
+  }
+}
+
+@media screen and (min-width:500px){
+
+  .container{
+    font-size: 25px;
+  }
+
+  .back-of-card{
+    position: absolute;
+    left: 120px;
+    top: 120px;
+    }
+
+    .front-of-card{
+      position: absolute;
+      top: 230px;
+      left: 50px;
+    }
+
+    .back-of-card p{
+      position: absolute;
+    top: 79px;
+    left: 234px;
+    }
+  
+
 }
 
 
@@ -211,7 +332,7 @@ width: 73%;
 
 
 
-@media  screen and (min-width:800px) {
+@media  screen and (min-width:800px) and (max-width:1080px) {
  
   body{
     height: 100vh;
