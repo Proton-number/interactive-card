@@ -7,239 +7,79 @@
 }
 
 body{
-  display: grid;
-  place-items: center;
   height: 100vh;
   background-image: url('/src/images/bg-main-mobile.png');
   background-repeat: no-repeat;
   background-size: 100%;
+}
+
+.container{
+
   position: relative;
 }
 
-.back-of-card{
- position: absolute;
- top: 80px;
- margin-right: 21px;
- font-size: 12px;
-}
 
+.back-of-card{
+position: absolute;
+left: 120px;
+top: 30px;
+}
 .back-of-card img{
-  width: 100%;
+width: 87%;
 }
 
 .back-of-card p{
   position: absolute;
-  bottom: 43px;
-  left: 116px;
+top: 50px;
+left: 163px;
 }
 
 .front-of-card{
-  position: fixed;
-  top: 133px;
-   right: -230px;
-  font-size: 12px;
+  position: absolute;
+  top: 107px;
+  left: 72px;
 }
 
 .front-of-card img{
-  width: 37%;
+width: 73%;
 }
 
 
-
 @media  screen and (min-width:320px) and (max-width:568px) {
-   .back-of-card p{
-     position: absolute;
-     bottom: 35px;
-     left: 102px;
-   }
-
-   .front-of-card{
-    position: fixed;
-    top: 133px;
-     right: -266px;
-    font-size: 12px;
-  }
-  
-  .front-of-card img{
-    width: 30%;
-  }
   
 }
 
 @media  screen and (min-width:360px){
-  .back-of-card p{
-    position: absolute;
-    bottom: 39px;
-    left: 114px;
-  }
-
-  .front-of-card{
-    position: fixed;
-    top: 133px;
-     right: -224px;
-    font-size: 12px;
-  }
-  
-  .front-of-card img{
-    width: 36%;
-  }
+ 
   
 }
 
 
 @media screen and (min-width:375px) and (max-width:812px){
-  .back-of-card p{
-    position: absolute;
-    bottom: 41px;
-    left: 113px;
-  }
-}
-
-@media screen and (min-width:390px)  {
-  .back-of-card p{
-    position: absolute;
-    bottom: 43px;
-    left: 123px;
-  }
-
-  .front-of-card{
-    position: fixed;
-    top: 140px;
-     right: -224px;
-    font-size: 12px;
-  }
+ 
 }
 
 @media screen and (min-width:400px)  {
-  .back-of-card p{
-    position: absolute;
-    bottom: 46px;
-    left: 133px;
-  }
-
-  .front-of-card{
-    position: fixed;
-    top: 140px;
-     right: -224px;
-    font-size: 12px;
-  }
+  
   
 }
 
 
 @media screen and (min-width:600px){
-body{
-  background-size: 100% 55%;
-}
 
-.back-of-card{
-  position: fixed;
-  top: 80px;
-  margin-right: 21px;
-  font-size: 16px;
- }
-
-.back-of-card p{
-  position: absolute;
-  bottom: 83px;
-  left: 233px;
-}
-
-.front-of-card{
-  top: 193px;
-   right: -14px;
-  font-size: 12px;
-}
-
-.front-of-card img{
-  width: 72%;
 }
 
 
-} 
+
 
 @media screen and (min-width:760px){
-  body{
-    display: grid;
-    place-items: center;
-    height: 100vh;
-    background-image: url('/src/images/bg-main-desktop.png');
-    background-repeat: no-repeat;
-    background-size: 25% 100%;
-    position: relative;
-  }
-  
-  .back-of-card{
-   position: absolute;
-   top: 346px;
-   left: 195px;
-   margin-right: 21px;
-   font-size: 20px;
-  }
-  
-  .back-of-card img{
-    width: 80%;
-  }
-  
-  .back-of-card p{
-    position: absolute;
-    bottom: 92px;
-    left: 261px;
-  }
-
-  .front-of-card{
-    position: absolute;
-    top: 95px;
-     right: 843px;
-    font-size: 12px;
-  }
-  
-  .front-of-card img{
-    width: 80%;
-}
+ 
 }
 
 
 
 @media  screen and (min-width:800px) and (max-width:1080px){
-  body{
-    display: grid;
-    place-items: center;
-    height: 100vh;
-    background-image: url('/src/images/bg-main-mobile.png');
-    background-repeat: no-repeat;
-    background-size: 100%;
-    position: relative;
-  }
-  
-  .back-of-card{
-   position: absolute;
-   top: 80px;
-   margin-left: 143px;
-   font-size: 18px;
-  }
-
-  .back-of-card img{
-    width: 87%;
-  }
-  
-  .back-of-card p{
-    position: absolute;
-    bottom: 99px;
-    left: 282px;
-  }
-
-  .front-of-card{
-    position: fixed;
-    top: 206px;
-     right: 126px;
-    font-size: 12px;
-  }
-  
-  .front-of-card img{
-    width: 87%;
-  }
-
+ 
 
 }
  

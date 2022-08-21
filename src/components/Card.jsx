@@ -8,6 +8,8 @@ function Card() {
     <>
       <div className="container">
 
+     
+
         <div className="back-of-card">
            <img src={back} alt="" />
            <p>000</p>
@@ -29,9 +31,6 @@ function Card() {
          </div>
 
         </div>
-        
-
-
       </div>
     </>
   )
