@@ -80,20 +80,37 @@ width: 73%;
 
 @media  screen and (min-width:360px){
  
+  .container{
+    font-size: 20px;
+  }
 
+  .back-of-card{
+    position: absolute;
+    left: 86px;
+    top: 80px;
+    }
+
+    .back-of-card img{
+    width: 90%;
+    }
    
   .back-of-card p{
     position: absolute;
-  top: 44px;
-  left: 143px;
+  top: 54px;
+  left: 173px;
   }
 
 
   .front-of-card{
     position: absolute;
-    top: 100px;
-    left: 72px;
+    top: 165px;
+    left: 50px;
   }
+
+  .front-of-card img{
+    width: 78%;
+    }
+
 }
 
 
