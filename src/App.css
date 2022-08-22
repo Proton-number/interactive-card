@@ -251,6 +251,24 @@ left: 7px;
   
 }
 
+@media screen and (min-width:412px){
+
+  .back-of-card p{
+    position: absolute;
+  top: 58px;
+  left: 178px;
+  }
+
+  .cardBody h3{
+    margin-left: 27px;
+  }
+
+  .bottomBody {
+    margin-left: 14px;
+  }
+}
+
+
 @media screen and (min-width:420px){
 
   .back-of-card p{
@@ -263,8 +281,8 @@ left: 7px;
     margin-left: 30px;
   }
 
-  .bottomBody .dates{
-    margin-left: 78px;
+  .bottomBody {
+    margin-left: 13px;
   }
 
 
@@ -462,6 +480,17 @@ left: 7px;
   width: 87%;
   }
 
+  .cardBody h3{
+    margin-left: 46px;
+  }
+
+  .bottomBody{
+    margin-top: 60px;
+  }
+
+  .bottomBody {
+    margin-left: 30px;
+  }
 
 }
  
