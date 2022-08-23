@@ -23,96 +23,80 @@ const [showModal, setShowModal] = useState(false)
 
 
 
-  const confirm = (e) => {
-  showThankyou(!thankyou)
-  setShowModal(!showModal)
-   e.preventDefault();
-  }
+  // const confirm = (e) => {
+  // showThankyou(!thankyou)
+  // setShowModal(!showModal)
+  //  e.preventDefault();
+  // }
 
   
 
   return (
     <>
-    <motion.div 
-    initial={{opacity:0}}
-    animate={{opacity:1}}
-    transition={{delay:1.2}}
-    className='Details'
-    >
-     <form onSubmit={confirm}>
-      
-      <label className='name'>CardHolder Name</label>
-      <motion.input 
-      variants={inputVariants}
-      whileFocus='focus'
-      type="text" 
-      maxLength={19}
-      placeholder='e.g. Jane Applessed' 
-      onChange={(e)=> setCardName(e.target.value)}
-      />
+  
 
-      <label className='number'>Card Number</label>
-      <motion.input 
-       variants={inputVariants}
-       whileFocus='focus'
-      type="tel"
-      inputMode='numeric'
-      pattern='[0-9] {16}*'
+  <div className="Details">
+
+
+    <form>
+      <p>CardHolder Name</p>
+      <input 
+      maxLength={18}
+      placeholder='e.g. Jane Applessed'
+      type="text" />
+
+      <p>Card number</p>
+      <input
       maxLength={16} 
       placeholder='e.g. 1234 5678 9123 0000'
-      onChange={(e)=> setCardNumber(e.target.value)}
-       />
+      type="text" />
+
+       <div className="cvc-date">
 
 
-   
-    <div className="bottom">
-         
-    <label className='month'>Exp. Date (MM/YY) </label>
-   
-   <label className='cvc'>cvc</label>
-    </div>
+       <div className="date">
+        <p>exp.date (mm/yy) </p>
 
- 
-      <div className="expiry">
-       <motion.input 
-        variants={inputVariants}
-        whileFocus='focus'
-       type='text' 
-       placeholder='MM'
-       maxLength={2}
-       onChange={(e)=> setMonth(e.target.value)}
-       />
+        <div className="date-inputs">
+         <input
+         maxLength={2}
+         placeholder='MM'
+          type="text" />
 
-          <motion.input
-           variants={inputVariants}
-           whileFocus='focus' 
-          type="year" 
-          placeholder='YY' 
+         <input 
           maxLength={2}
-          onChange={(e)=> setYear(e.target.value)}
-          />
-            
-<motion.input 
- variants={inputVariants}
- whileFocus='focus'
-type="text"  
-placeholder='e.g. 123' 
-maxLength={3}
-onChange={(e)=> setCvc(e.target.value)}
-/>
- 
-  </div> 
-         
+          placeholder='YY'    
+         type="text" />
+        </div>
+       </div>
+    
 
-<motion.button
-whileHover={{scale:1.2}}
-transition={{delay:0.4}}
->
-  Confirm
-  </motion.button>
+       <div className="cvc">
 
-      </form>
-    </motion.div>
+      <p>cvc </p>
+      <input 
+          maxLength={3}
+          placeholder='e.g 123'    
+         type="text" />
+
+      </div>
+      
+      
+      
+
+       </div>
+
+      <div className="btn">
+      <button>Confirm</button>
+      </div>
+
+
+    </form>
+
+
+  </div>
+
+
    
 
    {showModal && <motion.div

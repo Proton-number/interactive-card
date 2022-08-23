@@ -1,82 +1,58 @@
-body{
-    height: 100vh;
-}
+
 
 .Details{
-    margin-top: 120px;
-    display: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: 366px;
+    left: 44px;
+    line-height: 3em;
 }
-
-form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    grid-gap:9px;
-}
-
-
-label{
-    display: block;
-  color:  hsl(279, 6%, 55%);
-  text-transform: uppercase;
-  font-weight: 500;
-
-}
-
-.name{
-    margin-right: 82px;
-}
-
-
-.number{
-    margin-right: 120px;
-}
-
-.month{
-    margin-right: 30px;
-}
-
-.cvc{
-    margin-left: -80px;
-}
-
 
 input{
-    text-align: center;
-    padding: 10px;
-    font-size: 15px;
-  background-color: white;
-  color:  hsl(279, 6%, 52%);
-   border: 2px solid hsl(270, 3%, 87%);
+    width:83%;
+    border-radius: 10px;
+    padding: 12px;
+text-align: center;
 }
 
-input:focus{
-    outline: none;
-    border: 2px solid hsl(270, 3%, 87%)
+.cvc-date{
+    display: flex;
+ 
+    align-items: end;
 }
 
-.bottom{
-   display: grid;
-  grid-auto-flow: column;
-  grid-gap: 9em;
-}
-
-.expiry{
+.date-inputs{
     display: flex;
     justify-content: space-evenly;
 }
 
-.expiry input{
-    width: 20%;
+.date-inputs input{
+    width: 24%;
 }
 
-button{
-    padding: 15px;
-    width:60%;
-    border: none;
-    border-radius:10px;
+.cvc input{
+    width: 50%;
 }
+
+
+
+.btn{
+    display: grid;
+    align-items: center;
+    place-items: center;
+    margin-top: 20px;
+    margin-right: 26px;
+}
+
+
+button{
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: hsl(278, 68%, 11%);
+}
+
 
 .backdrop{
     position: fixed;
@@ -86,213 +62,4 @@ button{
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
     z-index: 1;
-}
-
-
-@media screen and (min-width:280px) and (max-width:290px){
-
-
-label{
-    display: block;
-  color:  hsl(279, 6%, 55%);
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 12px;
-}
-
-
-input{
-    text-align: center;
-    width: 67%;
-    padding: 9px;
-    font-size: 12px;
-  background-color: white;
-  color:  hsl(279, 6%, 52%);
-   border: 2px solid hsl(270, 3%, 87%);
-}
-
-.name{
-    margin-right: 63px;
-}
-
-
-.number{
-    margin-right: 96px;
-}
-
-.expiry input{
-    width: 26%;
-}
-
-
-.bottom{
-    display: grid;
-   grid-auto-flow: column;
-   grid-gap: 7em;
- }
-
-
-}
-
-
-@media  screen and (min-width:320px) and (max-width:568px) {
-    .Details{
-        margin-top: 280px;
-    }
-
-
-
-input{
-    text-align: center;
-    width: 67%;
-    padding: 9px;
-    font-size: 12px;
-  background-color: white;
-  color:  hsl(279, 6%, 52%);
-   border: 2px solid hsl(270, 3%, 87%);
-}
-
-.name{
-    margin-right: 63px;
-}
-
-
-.number{
-    margin-right: 96px;
-}
-
-.expiry input{
-    width: 26%;
-}
-
-
-.bottom{
-    display: grid;
-   grid-auto-flow: column;
-   grid-gap: 7em;
- }
-
-    
-}
-
-
-
-@media screen and (min-width:600px)  {
-    .Details{
-        margin-bottom: -13em;
-    }
-
-
-label{
-    display: block;
-  color:  hsl(279, 6%, 55%);
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 14px;
-}
-
-.name{
-    margin-right: 82px;
-}
-
-
-.number{
-    margin-right: 120px;
-}
-
-.month{
-    margin-right: 30px;
-}
-
-.cvc{
-    margin-left: -80px;
-}
-
-
-input{
-    width: 40%;
-    height: 50px;
-    text-align: center;
-    padding: 0px;
-    font-size: 15px;
-  background-color: white;
-  color:  hsl(279, 6%, 52%);
-   border: 2px solid hsl(270, 3%, 87%);
-}
-
-input:focus{
-    outline: none;
-    border: 2px solid hsl(270, 3%, 87%)
-}
-
-.bottom{
-   display: grid;
-  grid-auto-flow: column;
-  grid-gap: 18em;
-}
-
-.expiry{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.expiry input{
-    width: 16%;
-}
-
-button{
-    padding: 15px;
-    width:30%;
-    border: none;
-    border-radius:10px;
-}
-
-
-}
-
-
-
-@media screen and (min-width:760px)  {
-    .Details{
-        margin-left: 41em;
-     margin-bottom: 40px;
-    }
-
-
-.bottom{
-    display: grid;
-   grid-auto-flow: column;
-   grid-gap: 17em;
- }
-
-}
-
-
-
-
-
-@media  screen and (min-width:800px) and (max-width: 1080px) { 
-
-    .Details{
-        margin-top: 74em;
-        margin-right: 39em;
-    }
-
-
-input{
-    width: 66%;
-    height: 50px;
-    text-align: center;
-    padding: 0px;
-    font-size: 15px;
-  background-color: white;
-  color:  hsl(279, 6%, 52%);
-   border: 2px solid hsl(270, 3%, 87%);
-}
-
-
-.expiry input{
-    width: 26%;
-}
-
 }
