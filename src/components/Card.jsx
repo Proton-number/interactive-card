@@ -25,7 +25,7 @@ function Card() {
 
 
         <div className="front-of-card">
-          <img src={front} alt="" />
+          <img src={front} alt="" className='cardFront' />
 
          <div className="cardBody">
          <img className='logo' src={logo} alt="" />

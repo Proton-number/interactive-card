@@ -23,11 +23,11 @@ const [showModal, setShowModal] = useState(false)
 
 
 
-  // const confirm = (e) => {
-  // showThankyou(!thankyou)
-  // setShowModal(!showModal)
-  //  e.preventDefault();
-  // }
+  const confirm = (e) => {
+   showThankyou(!thankyou)
+   setShowModal(!showModal)
+   e.preventDefault();
+  }
 
   
 
@@ -38,7 +38,7 @@ const [showModal, setShowModal] = useState(false)
   <div className="Details">
 
 
-    <form>
+    <form onSubmit={confirm}>
       <p>CardHolder Name</p>
       <input 
       maxLength={18}
@@ -53,38 +53,40 @@ const [showModal, setShowModal] = useState(false)
 
        <div className="cvc-date">
 
+       
+<div className="date-inputs">
+<p>exp.date (MM/YY) </p>
+<input 
+  maxLength={2}
+  placeholder='MM'
+  className='month'
+  type="text" />
 
-       <div className="date">
-        <p>exp.date (mm/yy) </p>
+<input 
+  maxLength={2}
+  placeholder='YY'
+  className='year'
+  type="text" />
+</div>
 
-        <div className="date-inputs">
-         <input
-         maxLength={2}
-         placeholder='MM'
-          type="text" />
+<div className="cvc">
+  <p>cvc</p>
+  <input 
+  maxLength={3}
+  placeholder='e.g. 123'
+  type="text" />
 
-         <input 
-          maxLength={2}
-          placeholder='YY'    
-         type="text" />
-        </div>
-       </div>
-    
+</div>
 
-       <div className="cvc">
 
-      <p>cvc </p>
-      <input 
-          maxLength={3}
-          placeholder='e.g 123'    
-         type="text" />
 
-      </div>
+</div>
+
       
       
       
 
-       </div>
+     
 
       <div className="btn">
       <button>Confirm</button>

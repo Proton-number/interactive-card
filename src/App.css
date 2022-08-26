@@ -1,6 +1,7 @@
 *::before,
 *::after{
   box-sizing: border-box;
+
 }
 *{
   margin: 0;
@@ -11,7 +12,9 @@ body{
   background-image: url('/src/images/bg-main-mobile.png');
   background-repeat: no-repeat;
   background-size: 100%;
-  font-family: Space Grotesk;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 16px ;
+
 }
 
 .container{
@@ -22,7 +25,7 @@ body{
 .back-of-card{
 position: absolute;
 left: 120px;
-top: 30px;
+top: 100px;
 }
 .back-of-card img{
 width: 87%;
@@ -30,29 +33,35 @@ width: 87%;
 
 .back-of-card p{
   position: absolute;
-top: 50px;
+top: 48px;
 left: 163px;
 }
 
 .front-of-card{
-  position: absolute;
-  top: 107px;
-  left: 72px;
+     position: absolute;
+     top: 174px;
+     left: 60px;
 }
 
-.front-of-card img{
-width: 75%;
+.front-of-card .cardFront{
+  width: 76%;
 }
 
 .cardBody{
-position: absolute;
-top: 10px;
-left: 7px;
+  position: absolute;
+  top: 10px;
+  left: 14px; 
 }
 
-.cardBody .logo{
-  width: 32%;
-  margin-left: 10px;
+.cardBody img{
+  width: 25%;
+}
+
+
+.cardBody h3{
+  display: grid;
+  place-items: center;
+  margin-top: 10px;
 }
 
 .bottomBody{
@@ -61,319 +70,304 @@ left: 7px;
   margin-top: 20px;
 }
 
-.bottomBody .dates{
-  margin-left: 50px;
-}
+
+
 
 
 @media  screen and (min-width:320px) and (max-width:568px) {
   
-
-  .container{
-    font-size: 18px;
+  body{
+    font-size: 14px;
   }
 
-
-.back-of-card{
+.back-of-card p{
   position: absolute;
-  left: 70px;
-  top: 72px;
-  }
-  .back-of-card img{
-  width: 92%;
-  }
-  
-  .back-of-card p{
-    position: absolute;
-  top: 50px;
-  left: 161px;
-  }
-  
-  .front-of-card{
-    position: absolute;
-    top: 152px;
-    left: 32px;
-  }
-  
-  .front-of-card img{
-  width: 83%;
-  }
+top: 34px;
+left: 123px;
+}
 
-  .cardBody h3{
-    margin-left: 10px;
-  }
+
+.cardBody{
+  position: absolute;
+  top: 4px;
+  left: 8px; 
+}
+
+.cardBody img{
+  width: 20%;
+}
+
+
+.cardBody h3{
+  display: grid;
+  place-items: center;
+  margin-top: 5px;
+}
+
+.bottomBody{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+
+
+
 
 }
 
 @media  screen and (min-width:360px){
- 
-  .container{
-    font-size: 20px;
+
+  body{
+    font-size: 15px;
   }
 
-  .back-of-card{
-    position: absolute;
-    left: 86px;
-    top: 80px;
-    }
-
-    .back-of-card img{
-    width: 90%;
-    }
-   
-  .back-of-card p{
-    position: absolute;
-  top: 54px;
-  left: 173px;
-  }
+.back-of-card p{
+  position: absolute;
+top: 44px;
+left: 134px;
+}
 
 
-  .front-of-card{
-    position: absolute;
-    top: 165px;
-    left: 50px;
-  }
+.cardBody{
+  position: absolute;
+  top: 12px;
+  left: 15px; 
+}
 
-  .front-of-card img{
-    width: 78%;
-    }
+.cardBody img{
+  width: 22%;
+}
 
-    .cardBody h3{
-      margin-left: 0px;
-    }
-
-    .bottomBody .dates{
-      margin-left: 24px;
-    }
 
 }
 
 
 @media screen and (min-width:375px) and (max-width:812px){
 
-  .container{
-    font-size: 18px;
+  body{
+    font-size: 16px;
   }
 
-
-  .back-of-card{
-    position: absolute;
-    left: 100px;
-    top: 90px;
-    }
-    .back-of-card img{
-    width: 90%;
-    }
-   
-   
-  .back-of-card p{
-    position: absolute;
-  top: 54px;
-  left: 168px;
-  }
-
-  .front-of-card{
-    position: absolute;
-    top: 170px;
-    left: 52px;
-  }
-
-  .front-of-card img{
-    width: 77%;
-  }
-
-  .cardBody h3{
-    margin-left: 15px;
-  }
-
-  .bottomBody .dates{
-    margin-left: 59px;
-  }
-
+.back-of-card p{
+  position: absolute;
+top: 48px;
+left: 146px;
 }
 
 
-@media screen and (min-width:380px)  {
- 
-  .back-of-card p{
-    position: absolute;
-  top: 56px;
-  left: 168px;
-  }
+.cardBody{
+  position: absolute;
+  top: 14px;
+  left: 15px; 
+}
 
-  .front-of-card{
-    position: absolute;
-    top: 178px;
-    left: 52px;
-  }
+.cardBody img{
+  width: 22%;
+}
 
 }
+
 
 @media screen and (min-width:390px)  {
-  .back-of-card p{
-    position: absolute;
-  top: 58px;
-  left: 178px;
+
+  body{
+    font-size: 16px;
   }
 
-  .cardBody h3{
-    margin-left: 20px;
-  }
+.back-of-card p{
+  position: absolute;
+top: 53px;
+left: 156px;
+}
 
+.front-of-card{
+  top: 180px;
+}
+
+.cardBody{
+  position: absolute;
+  top: 14px;
+  left: 20px; 
+}
+
+.cardBody img{
+  width: 25%;
+}
+ 
 }
 
 
 @media screen and (min-width:400px)  {
-  
-  .back-of-card{
-    position: absolute;
-    left: 120px;
-    top: 90px;
-    }
-    .back-of-card img{
-    width: 89%;
-    }
-   
-  .back-of-card p{
-    position: absolute;
-  top: 54px;
-  left: 178px;
+ 
+  body{
+    font-size: 16px;
   }
 
-  .front-of-card{
-    position: absolute;
-    top: 179px;
-    left: 50px;
-  }
+.back-of-card p{
+  position: absolute;
+top: 54px;
+left: 166px;
+}
 
-  .front-of-card img{
-    width: 75%;
-  }
-  
+.front-of-card{
+  top: 184px;
+}
+
+.cardBody{
+  position: absolute;
+  top: 18px;
+  left: 23px; 
+}
+
+.cardBody img{
+  width: 25%;
+}
+ 
 }
 
 @media screen and (min-width:412px){
-
-  .back-of-card p{
-    position: absolute;
-  top: 58px;
-  left: 178px;
+  body{
+    font-size: 16px;
   }
 
-  .cardBody h3{
-    margin-left: 27px;
-  }
+.back-of-card p{
+  position: absolute;
+top: 54px;
+left: 166px;
+}
 
-  .bottomBody {
-    margin-left: 14px;
-  }
+.front-of-card{
+  top: 184px;
+}
+
+.cardBody{
+  position: absolute;
+  top: 18px;
+  left: 23px; 
+}
+
+.cardBody img{
+  width: 25%;
+}
 }
 
 
 @media screen and (min-width:420px){
 
-  .back-of-card p{
-    position: absolute;
-  top: 59px;
-  left: 178px;
-  }
 
-  .cardBody h3{
-    margin-left: 30px;
-  }
+.back-of-card p{
+  position: absolute;
+top: 58px;
+left: 174px;
+}
 
-  .bottomBody {
-    margin-left: 13px;
-  }
+
+.front-of-card{
+  top: 188px;
+}
+
+
+.cardBody{
+  position: absolute;
+  top: 20px;
+  left: 29px; 
+}
 
 
 }
 
 @media screen and (min-width:500px){
 
-  .container{
-    font-size: 25px;
+  body{
+    font-size: 20px;
   }
 
-  .back-of-card{
-    position: absolute;
-    left: 120px;
-    top: 120px;
-    }
+.back-of-card p{
+  position: absolute;
+top: 76px;
+left: 230px;
+}
 
-    .front-of-card{
-      position: absolute;
-      top: 230px;
-      left: 50px;
-    }
+.front-of-card{
+  top: 210px;
+}
 
-    .back-of-card p{
-      position: absolute;
-    top: 79px;
-    left: 234px;
-    }
+.cardBody{
+  position: absolute;
+  top: 26px;
+  left: 32px; 
+}
+
+.cardBody img{
+  width: 25%;
+}
+
+.cardBody h3{
+  margin-top: 14px;
+}
+
+.bottomBody{
+  margin-top: 26px;
+}
   
-    .cardBody h3{
-      margin-top: 10px;
-      margin-left: 18px;
-    }
-  
-    .bottomBody {
-      margin-top: 40px;
-    }
-
 }
 
 
 @media screen and (min-width:600px){
-  .container{
+ 
+  body{
     font-size: 24px;
   }
 
-
-.back-of-card{
-  position: absolute;
-  left: 240px;
-  top: 140px;
-  }
-
-  .back-of-card img{
-  width: 87%;
-  }
-  
-  .back-of-card p{
+  .back-of-card{
     position: absolute;
-  top: 92px;
-  left: 261px;
-  }
+    left: 260px;
+    top: 160px;
+    }
+    .back-of-card img{
+    width: 87%;
+    }
+    
+    .back-of-card p{
+      position: absolute;
+    top: 87px;
+    left: 260px;
+    }
+    
+    .front-of-card{
+         position: absolute;
+         top: 284px;
+         left: 160px;
+    }
+    
+    .front-of-card .cardFront{
+      width: 84%;
+    }
+    
+    .cardBody{
+      position: absolute;
+      top: 22px;
+      left: 28px; 
+    }
+    
+    .cardBody img{
+      width: 25%;
+    }
+    
+    
+    .cardBody h3{
+      display: grid;
+      place-items: center;
+      margin-top: 24px;
+    }
+    
+    .bottomBody{
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 30px;
+    }
   
-  .front-of-card{
-    position: absolute;
-    top: 265px;
-    left: 150px;
-  }
-  
-  .front-of-card img{
-  width: 87%;
-  }
-
- .cardBody .logo{
-    width: 25%;
-  }
-
-  .cardBody h3{
-    margin-top: 18px;
-    margin-left: 50px;
-  }
-
-  .bottomBody {
-    margin-top: 60px;
-  }
-
-  .bottomBody .dates{
-    margin-left: 135px;
-  }
-
+ 
 }
 
 
@@ -385,58 +379,62 @@ left: 7px;
     background-image: url('/src/images/bg-main-desktop.png');
     background-repeat: no-repeat;
     background-size: 25% 100%;
+   color: white;
   }
-  
-  .container{
-    position: relative;
+ 
+  body{
+    font-size: 24px;
   }
-  
-  
+
   .back-of-card{
-  position: absolute;
-  left: 168px;
-  top: 393px;
-  }
-  .back-of-card img{
-  width: 75%;
-  }
-  
-  .back-of-card p{
     position: absolute;
-  top: 80px;
-  left: 246px;
-  }
-  
-  .front-of-card{
-    position: absolute;
-    top: 107px;
-    left: 72px;
-  }
-  
-  .front-of-card img{
-  width: 75%;
-  }
+    left: 240px;
+    top: 380px;
+    }
 
-  .cardBody{
-    top: 10px;
-  }
+    .back-of-card img{
+    width: 87%;
+    }
+    
+    .back-of-card p{
+      position: absolute;
+    top: 92px;
+    left: 278px;
+    }
+    
+    .front-of-card{
+         position: absolute;
+         top: 104px;
+         left: 120px;
+    }
+    
+    .front-of-card .cardFront{
+      width: 84%;
+    }
+    
+    .cardBody{
+      position: absolute;
+      top: 28px;
+      left: 32px; 
+    }
+    
+    .cardBody img{
+      width: 25%;
+    }
+    
+    
+    .cardBody h3{
+      display: grid;
+      place-items: center;
+      margin-top: 15px;
+    }
+    
+    .bottomBody{
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 30px;
+    }
 
-  .cardBody .logo{
-    width: 20%;
-  }
-  
-  .cardBody h3{
-    margin-left: 25px;
-  }
-
-  .bottomBody{
-    margin-top: 40px;
-  }
-
-  .bottomBody .dates{
-    margin-left: 30px;
-  }
-  
 }
 
 
@@ -448,50 +446,56 @@ left: 7px;
     background-image: url('/src/images/bg-main-mobile.png');
     background-repeat: no-repeat;
     background-size:  100%;
-  }
-
-  .container{
     font-size: 24px;
   }
 
-
-.back-of-card{
-  position: absolute;
-  left: 338px;
-  top: 183px;
-  }
-
-  .back-of-card img{
-  width: 87%;
-  }
-  
-  .back-of-card p{
+  .back-of-card{
     position: absolute;
-  top: 92px;
-  left: 281px;
-  }
+    left: 360px;
+    top: 250px;
+    }
+    .back-of-card img{
+    width: 87%;
+    }
+    
+    .back-of-card p{
+      position: absolute;
+    top: 90px;
+    left: 258px;
+    }
+    
+    .front-of-card{
+         position: absolute;
+         top: 384px;
+         left: 280px;
+    }
+    
+    .front-of-card .cardFront{
+      width: 84%;
+    }
+    
+    .cardBody{
+      position: absolute;
+      top: 28px;
+      left: 32px; 
+    }
+    
+    .cardBody img{
+      width: 25%;
+    }
+    
+    
+    .cardBody h3{
+      display: grid;
+      place-items: center;
+      margin-top: 15px;
+    }
+    
+    .bottomBody{
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 30px;
+    }
   
-  .front-of-card{
-    position: absolute;
-    top: 311px;
-    left: 236px;
-  }
-  
-  .front-of-card img{
-  width: 87%;
-  }
-
-  .cardBody h3{
-    margin-left: 46px;
-  }
-
-  .bottomBody{
-    margin-top: 60px;
-  }
-
-  .bottomBody {
-    margin-left: 30px;
-  }
-
 }
  
