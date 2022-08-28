@@ -336,8 +336,23 @@ left: 202px;
   top: 26px;
   left: 23px; 
 }
-
 }
+
+
+@media screen and (min-width:480px){
+  .back-of-card p{
+    position: absolute;
+  top: 72px;
+  left: 221px;
+  }
+  
+  .cardBody{
+    position: absolute;
+    top: 32px;
+    left: 29px; 
+  }
+  }
+
 
 @media screen and (min-width:500px){
 
