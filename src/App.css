@@ -291,7 +291,51 @@ left: 174px;
   top: 23px;
   left: 19px; 
 }
+}
 
+/* YOU NEED TO ADJUST THIS SOON */
+@media screen and (min-width:450px){
+  body{
+    font-size: 20px;
+  }
+
+.back-of-card p{
+  position: absolute;
+top: 65px;
+left: 202px;
+}
+
+.front-of-card{
+  top: 197px;
+}
+
+.cardBody{
+  position: absolute;
+  top: 26px;
+  left: 18px; 
+}
+
+.cardBody img{
+  width: 25%;
+}
+}
+
+@media screen and (min-width:460px){
+.back-of-card p{
+  position: absolute;
+top: 68px;
+left: 202px;
+}
+
+.front-of-card{
+  top: 210px;
+}
+
+.cardBody{
+  position: absolute;
+  top: 26px;
+  left: 23px; 
+}
 
 }
 

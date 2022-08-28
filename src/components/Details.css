@@ -61,6 +61,8 @@ form p{
     background-color: hsl(278, 68%, 11%);
 }
 
+
+
 @media screen and (min-width:500px) {
     Details{
         text-transform: uppercase;
