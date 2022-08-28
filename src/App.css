@@ -14,7 +14,6 @@ body{
   background-size: 100%;
   font-family: 'Space Grotesk', sans-serif;
   font-size: 16px ;
-
 }
 
 .container{
@@ -225,25 +224,45 @@ left: 166px;
  
 }
 
+@media screen and (min-width:411px){
+
+  body{
+    font-size: 18px;
+  }
+
+  .back-of-card p{
+    position: absolute;
+  top: 56px;
+  left: 179px;
+  }
+  
+.cardBody{
+  position: absolute;
+  top: 22px;
+  left: 16px; 
+}
+
+}
+
 @media screen and (min-width:412px){
   body{
-    font-size: 16px;
+    font-size: 18px;
   }
 
 .back-of-card p{
   position: absolute;
-top: 54px;
-left: 166px;
+top: 56px;
+left: 172px;
 }
 
 .front-of-card{
-  top: 184px;
+  top: 188px;
 }
 
 .cardBody{
   position: absolute;
-  top: 18px;
-  left: 23px; 
+  top: 20px;
+  left: 18px; 
 }
 
 .cardBody img{
@@ -269,8 +288,8 @@ left: 174px;
 
 .cardBody{
   position: absolute;
-  top: 20px;
-  left: 29px; 
+  top: 23px;
+  left: 19px; 
 }
 
 
@@ -380,6 +399,7 @@ left: 230px;
     background-repeat: no-repeat;
     background-size: 25% 100%;
    color: white;
+   font-family: 'Space Grotesk', sans-serif;
   }
  
   body{
@@ -406,6 +426,8 @@ left: 230px;
          position: absolute;
          top: 104px;
          left: 120px;
+      
+
     }
     
     .front-of-card .cardFront{
@@ -415,7 +437,7 @@ left: 230px;
     .cardBody{
       position: absolute;
       top: 28px;
-      left: 32px; 
+      left: 29px; 
     }
     
     .cardBody img{
