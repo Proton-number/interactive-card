@@ -16,7 +16,7 @@ function Card({cardName, cardNumber, month, year, cvc}) {
 
         <div className="back-of-card">
            <img src={back} alt="" />
-            <p>{cvc}</p>| 
+            <p>{cvc}</p>
         </div>
 
 
