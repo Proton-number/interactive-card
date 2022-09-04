@@ -32,7 +32,8 @@ form p{
     width: 24%;
 }
 
-.year{
+
+#year{
     margin-left: 20px;
 }
 
@@ -60,8 +61,19 @@ form p{
     padding: 15px;
     background-color: hsl(278, 68%, 11%);
 }
+#error-text{
+    color: hsl(0, 100%, 66%);
+    font-size: 18px;
+    margin-left: 10px;
+    text-transform: lowercase;
+}
 
-
+.error{
+    border: 2px solid hsl(0, 100%, 66%);
+}
+.normal{
+    border: 2px solid grey;
+}
 
 @media screen and (min-width:500px) {
     Details{

@@ -14,6 +14,7 @@ body{
   background-size: 100%;
   font-family: 'Space Grotesk', sans-serif;
   font-size: 16px ;
+  background-color: white;
 }
 
 .container{
@@ -72,11 +73,10 @@ left: 163px;
 
 
 
-
 @media  screen and (min-width:320px) and (max-width:568px) {
   
   body{
-    font-size: 14px;
+    font-size: 13px;
   }
 
 .back-of-card p{
@@ -86,12 +86,16 @@ left: 123px;
 }
 
 
+.front-of-card{
+  position: absolute;
+  top: 160px;
+  left: 60px;
+}
 .cardBody{
   position: absolute;
-  top: 4px;
-  left: 8px; 
+  top: 8px;
+  left: 13px; 
 }
-
 .cardBody img{
   width: 20%;
 }
@@ -110,7 +114,9 @@ left: 123px;
 }
 
 
-
+.bottomBody .dates{
+  margin-left: 16px;
+}
 
 }
 
@@ -126,6 +132,12 @@ top: 44px;
 left: 134px;
 }
 
+
+.front-of-card{
+  position: absolute;
+  top: 174px;
+  left: 60px;
+}
 
 .cardBody{
   position: absolute;
@@ -149,7 +161,7 @@ left: 134px;
 
 .back-of-card p{
   position: absolute;
-top: 48px;
+top: 49px;
 left: 146px;
 }
 
@@ -166,6 +178,19 @@ left: 146px;
 
 }
 
+@media screen and (min-width:385px)  {
+
+  .front-of-card{
+    top: 180px;
+  }
+  
+  .cardBody{
+    position: absolute;
+    top: 18px;
+    left: 19px; 
+  }
+  
+}
 
 @media screen and (min-width:390px)  {
 
@@ -175,7 +200,7 @@ left: 146px;
 
 .back-of-card p{
   position: absolute;
-top: 53px;
+top: 51px;
 left: 156px;
 }
 
@@ -185,8 +210,8 @@ left: 156px;
 
 .cardBody{
   position: absolute;
-  top: 14px;
-  left: 20px; 
+  top: 18px;
+  left: 21px; 
 }
 
 .cardBody img{
@@ -215,7 +240,7 @@ left: 166px;
 .cardBody{
   position: absolute;
   top: 18px;
-  left: 23px; 
+  left: 24px; 
 }
 
 .cardBody img{
@@ -262,7 +287,7 @@ left: 172px;
 .cardBody{
   position: absolute;
   top: 20px;
-  left: 18px; 
+  left: 17px; 
 }
 
 .cardBody img{
@@ -293,7 +318,6 @@ left: 174px;
 }
 }
 
-/* YOU NEED TO ADJUST THIS SOON */
 @media screen and (min-width:450px){
   body{
     font-size: 20px;
@@ -334,7 +358,7 @@ left: 202px;
 .cardBody{
   position: absolute;
   top: 26px;
-  left: 23px; 
+  left: 22px; 
 }
 }
 
@@ -348,8 +372,8 @@ left: 202px;
   
   .cardBody{
     position: absolute;
-    top: 32px;
-    left: 29px; 
+    top: 34px;
+    left: 30px; 
   }
   }
 
@@ -357,7 +381,7 @@ left: 202px;
 @media screen and (min-width:500px){
 
   body{
-    font-size: 20px;
+    font-size: 23px;
   }
 
 .back-of-card p{
@@ -372,8 +396,8 @@ left: 230px;
 
 .cardBody{
   position: absolute;
-  top: 26px;
-  left: 32px; 
+  top: 30px;
+  left: 18px; 
 }
 
 .cardBody img{
@@ -384,10 +408,7 @@ left: 230px;
   margin-top: 14px;
 }
 
-.bottomBody{
-  margin-top: 26px;
-}
-  
+
 }
 
 
@@ -425,7 +446,7 @@ left: 230px;
     .cardBody{
       position: absolute;
       top: 22px;
-      left: 28px; 
+      left: 31px; 
     }
     
     .cardBody img{
@@ -462,7 +483,7 @@ left: 230px;
   }
  
   body{
-    font-size: 24px;
+    font-size: 26px;
   }
 
   .back-of-card{
@@ -477,7 +498,7 @@ left: 230px;
     
     .back-of-card p{
       position: absolute;
-    top: 92px;
+    top: 95px;
     left: 278px;
     }
     
@@ -485,8 +506,6 @@ left: 230px;
          position: absolute;
          top: 104px;
          left: 120px;
-      
-
     }
     
     .front-of-card .cardFront{
@@ -496,7 +515,7 @@ left: 230px;
     .cardBody{
       position: absolute;
       top: 28px;
-      left: 29px; 
+      left: 18px; 
     }
     
     .cardBody img{
@@ -514,6 +533,9 @@ left: 230px;
       display: flex;
       justify-content: space-evenly;
       margin-top: 30px;
+    }
+    .bottomBody .dates{
+      margin-left: 28px;
     }
 
 }

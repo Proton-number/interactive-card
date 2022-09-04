@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, {useRef, useState } from 'react'
 import './Details.css'
 import {motion} from 'framer-motion'
 import Thankyou from './Thankyou'
@@ -17,17 +17,80 @@ const inputVariants={
 }
 
 
-function Details({ setCardNumber, setCardName, setMonth,  setYear, setCvc}) {
+function Details({ setCardNumber, setCardName,   setMonth,  setYear, setCvc}) {
 const[ thankyou, showThankyou] = useState(false)
 const [showModal, setShowModal] = useState(false)
+ const [nameError, setNameError] = useState(false)
+ const [numberError, setNumberError] = useState(false)
+ const [monthError, setMonthError] = useState(false)
+ const [yearError, setYearError] = useState(false)
+ const [cvcError, setCvcError] = useState(false)
+const[displayError, setDisplayError] = useState(false)
 
+const nameRef = useRef()
+const numberRef = useRef()
+const monthRef = useRef()
+const yearRef = useRef()
+const cvcRef = useRef()
 
 
   const confirm = (e) => {
-   showThankyou(!thankyou)
-   setShowModal(!showModal)
+ 
    e.preventDefault();
+  if(nameRef.current.value == ''){
+    setNameError(true)
+    showThankyou(false)
+    setShowModal(false)
+  }else{
+    setNameError(false)
+    showThankyou(true)
+    setShowModal(true)
   }
+
+  if(numberRef.current.value == ''){
+    setNumberError(true)
+    showThankyou(false)
+    setShowModal(false)
+  }else{
+    setNumberError(false)
+    showThankyou(true)
+    setShowModal(true)
+  }
+  
+  if(monthRef.current.value == ''){
+    setMonthError(true)
+    showThankyou(false)
+    setShowModal(false)
+  }else{
+    setMonthError(false)
+    showThankyou(true)
+    setShowModal(true)
+  }
+
+  if(yearRef.current.value == ''){
+    setYearError(true)
+    showThankyou(false)
+    setShowModal(false)
+  }else{
+    setYearError(false)
+      showThankyou(true)
+    setShowModal(true)
+  }
+
+  if(cvcRef.current.value == ''){
+    setCvcError(true)
+    showThankyou(false)
+    setShowModal(false)
+  }else{
+    setCvcError(false)
+    showThankyou(true)
+    setShowModal(true)
+  }
+
+
+  }
+
+
 
   
 
@@ -37,19 +100,31 @@ const [showModal, setShowModal] = useState(false)
 
   <div className="Details">
 
+     
 
     <form onSubmit={confirm}>
       <p>CardHolder Name</p>
       <input 
-      maxLength={18}
-      placeholder='e.g. Jane Applessed'
-      type="text" />
+       maxLength={18}
+       placeholder='e.g. Jane Applessed'
+       type="text"
+       ref={nameRef}
+       className={nameError ? 'error' : 'normal' }
+      onChange={(e)=> setCardName(e.target.value)}
+       />
+    {nameError && <p id='error-text'>Please enter your details</p>}
+    
 
       <p>Card number</p>
       <input
-      maxLength={16} 
+      maxLength={19} 
       placeholder='e.g. 1234 5678 9123 0000'
-      type="text" />
+      type="text" 
+      ref={numberRef}
+      className={numberError ? 'error' : 'normal' }
+      onChange={(e)=> setCardNumber(e.target.value)}
+      />
+    {numberError && <p id='error-text'>Please enter your details</p>}
 
        <div className="cvc-date">
 
@@ -59,14 +134,21 @@ const [showModal, setShowModal] = useState(false)
 <input 
   maxLength={2}
   placeholder='MM'
-  className='month'
-  type="text" />
+  className={monthError ? 'error' : 'normal' }
+  type="text" 
+  ref={monthRef}
+  onChange={(e)=> setMonth(e.target.value)}
+  />
 
 <input 
   maxLength={2}
   placeholder='YY'
-  className='year'
-  type="text" />
+  id='year'
+  className={yearError ? 'error' : 'normal' }
+  type="text" 
+  ref={yearRef}
+  onChange={(e)=> setYear(e.target.value)}
+  />
 </div>
 
 <div className="cvc">
@@ -74,7 +156,11 @@ const [showModal, setShowModal] = useState(false)
   <input 
   maxLength={3}
   placeholder='e.g. 123'
-  type="text" />
+  type="text" 
+  ref={cvcRef}
+  className={cvcError ? 'error' : 'normal' }
+  onChange={(e)=> setCvc(e.target.value)}
+  />
 
 </div>
 
@@ -82,7 +168,7 @@ const [showModal, setShowModal] = useState(false)
 
 </div>
 
-      
+       
       
       
 

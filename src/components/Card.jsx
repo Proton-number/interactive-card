@@ -6,12 +6,8 @@ import logo from '/src/images/card-logo.svg'
 import Details from './Details'
 
 
-function Card() {
-  const [cardNumber, setCardNumber] =useState('0000 0000 0000 0000')
-  const [cardName, setCardName] = useState('Jane Appleased')
-  const[month,setMonth] = useState('00')
-  const [year,setYear] = useState('00')
-  const[cvc, setCvc] = useState('000')
+function Card({cardName, cardNumber, month, year, cvc}) {
+  
   return (
     <>
       <div className="container">
@@ -20,7 +16,7 @@ function Card() {
 
         <div className="back-of-card">
            <img src={back} alt="" />
-           <p>{cvc}</p>
+            <p>{cvc}</p>| 
         </div>
 
 
@@ -32,21 +28,15 @@ function Card() {
          <h3> {cardNumber} </h3>
 
          <div className="bottomBody">
-            <p> {cardName} </p>
-             <p className='dates'>{month}/{year}</p>
+             <p> {cardName} </p> 
+              <p className='dates'>{month}/{year}</p> 
          </div>
 
          </div>
 
         </div>
       </div>
-      <Details 
-      setCardNumber={setCardNumber}
-      setCardName={setCardName}
-      setMonth={setMonth}
-      setYear={setYear}
-      setCvc={setCvc}
-      />
+      
     </>
   )
 }
