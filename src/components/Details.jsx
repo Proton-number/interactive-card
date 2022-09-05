@@ -128,7 +128,7 @@ function Details({ setCardNumber, setCardName, setMonth, setYear, setCvc }) {
           <input
             maxLength={19}
             placeholder="e.g. 1234 5678 9123 0000"
-            type="text"
+            type="number"
             ref={numberRef}
             className={numberError ? "error" : "normal"}
             onChange={(e) => setCardNumber(e.target.value)}
@@ -142,7 +142,7 @@ function Details({ setCardNumber, setCardName, setMonth, setYear, setCvc }) {
                 maxLength={2}
                 placeholder="MM"
                 className={monthError ? "error" : "normal"}
-                type="text"
+                type="number"
                 ref={monthRef}
                 onChange={(e) => setMonth(e.target.value)}
               />
@@ -152,7 +152,7 @@ function Details({ setCardNumber, setCardName, setMonth, setYear, setCvc }) {
                 placeholder="YY"
                 id="year"
                 className={yearError ? "error" : "normal"}
-                type="text"
+                type="number"
                 ref={yearRef}
                 onChange={(e) => setYear(e.target.value)}
               />
@@ -163,7 +163,7 @@ function Details({ setCardNumber, setCardName, setMonth, setYear, setCvc }) {
               <input
                 maxLength={3}
                 placeholder="e.g. 123"
-                type="text"
+                type="number"
                 ref={cvcRef}
                 className={cvcError ? "error" : "normal"}
                 onChange={(e) => setCvc(e.target.value)}
