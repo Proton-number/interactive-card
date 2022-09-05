@@ -236,6 +236,7 @@ export default function Details({
       setYearError(false)
       setCvcError(false)
     }
+    e.target.reset()
   }
 
   return (
@@ -327,7 +328,7 @@ export default function Details({
           animate="visible"
           className="backdrop"
         >
-          {thankyou && <Thankyou />}
+          {thankyou && <Thankyou setShowModal={setShowModal} />}
         </motion.div>
       )}
     </div>
