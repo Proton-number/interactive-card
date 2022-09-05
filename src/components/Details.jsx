@@ -249,9 +249,7 @@ export default function Details({
             type="text"
             ref={nameRef}
             className={nameError ? "error" : "normal"}
-            onChange={(e) => {
-              setCardName(e.target.value)
-            }}
+            onChange={(e) => setCardName(e.target.value)}
           />
           {nameError && <p id="error-text">Please enter your details</p>}
 
@@ -275,7 +273,12 @@ export default function Details({
                 className={monthError ? "error" : "normal"}
                 type="number"
                 ref={monthRef}
-                onChange={(e) => setMonth(e.target.value)}
+                onChange={(e) => {
+                  const { value, maxLength } = e.target
+                  //make sure month value doesn't go beyond your specified maxLength
+                  const month = value.slice(0, maxLength)
+                  setMonth(month)
+                }}
               />
 
               <input
@@ -285,7 +288,12 @@ export default function Details({
                 className={yearError ? "error" : "normal"}
                 type="number"
                 ref={yearRef}
-                onChange={(e) => setYear(e.target.value)}
+                onChange={(e) => {
+                  const { value, maxLength } = e.target
+                  //make sure year value doesn't go beyond your specify maxLength
+                  const year = value.slice(0, maxLength)
+                  setYear(e.target.value)
+                }}
               />
             </div>
 
@@ -297,7 +305,11 @@ export default function Details({
                 type="number"
                 ref={cvcRef}
                 className={cvcError ? "error" : "normal"}
-                onChange={(e) => setCvc(e.target.value)}
+                onChange={(e) => {
+                  const { value, maxLength } = e.target
+                  const cvv = value.slice(0, maxLength)
+                  setCvc(cvv)
+                }}
               />
             </div>
           </div>
