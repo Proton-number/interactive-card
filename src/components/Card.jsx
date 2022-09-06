@@ -3,7 +3,6 @@ import {motion} from 'framer-motion'
 import back from '/src/images/bg-card-back.png'
 import front from '/src/images/bg-card-front.png'
 import logo from '/src/images/card-logo.svg'
-import Details from './Details'
 
 
 function Card({cardName, cardNumber, month, year, cvc}) {
@@ -15,16 +14,33 @@ function Card({cardName, cardNumber, month, year, cvc}) {
      
 
         <div className="back-of-card">
-           <img src={back} alt="" />
-            <p>{cvc}</p>
+           <motion.img 
+           initial={{x:'250vw'}}
+           animate={{x:0}}
+           transition={{delay:0.1, type:'spring', stiffness: 30}}
+           src={back} alt="" />
+            <motion.p
+            initial={{opacity:0}}
+            animate={{opacity:1}}
+            transition={{delay:1.5}}
+            >{cvc}</motion.p>
         </div>
 
 
         <div className="front-of-card">
-          <img src={front} alt="" className='cardFront' />
+          <motion.img 
+           initial={{x:'-250vw'}}
+           animate={{x:0}}
+           transition={{delay:0.1, type:'spring', stiffness: 30}}
+          src={front} alt="" 
+          className='cardFront' />
 
-         <div className="cardBody">
-         <img className='logo' src={logo} alt="" />
+         <motion.div 
+         initial={{opacity:0}}
+         animate={{opacity:1}}
+         transition={{delay:1.5}}
+         className="cardBody">
+         <img className='logo'src={logo} alt="" />
          <h3> {cardNumber} </h3>
 
          <div className="bottomBody">
@@ -32,7 +48,7 @@ function Card({cardName, cardNumber, month, year, cvc}) {
               <p className='dates'>{month}/{year}</p> 
          </div>
 
-         </div>
+         </motion.div>
 
         </div>
       </div>

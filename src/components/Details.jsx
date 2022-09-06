@@ -15,6 +15,11 @@ const inputVariants={
     scale: 1.1,
   }
 }
+const errorVariants={
+  animationOne:{
+    x: [-20,20,0]
+  }
+}
 
 
 function Details({ setCardNumber, setCardName,   setMonth,  setYear, setCvc}) {
@@ -25,7 +30,7 @@ const [showModal, setShowModal] = useState(false)
  const [monthError, setMonthError] = useState(false)
  const [yearError, setYearError] = useState(false)
  const [cvcError, setCvcError] = useState(false)
-const[displayError, setDisplayError] = useState(false)
+
 
 const nameRef = useRef()
 const numberRef = useRef()
@@ -98,13 +103,19 @@ const cvcRef = useRef()
     <>
   
 
-  <div className="Details">
+  <motion.div 
+   initial={{opacity:0}}
+   animate={{opacity:1}}
+   transition={{delay:1.5}}
+  className="Details">
 
      
 
     <form onSubmit={confirm}>
       <p>CardHolder Name</p>
-      <input 
+      <motion.input 
+      variants={inputVariants}
+      whileFocus='focus'
        maxLength={18}
        placeholder='e.g. Jane Applessed'
        type="text"
@@ -112,11 +123,17 @@ const cvcRef = useRef()
        className={nameError ? 'error' : 'normal' }
       onChange={(e)=> setCardName(e.target.value)}
        />
-    {nameError && <p id='error-text'>Please enter your details</p>}
+    {nameError && <motion.p
+    variants={errorVariants}
+     animate='animationOne'
+     transition={{type:'spring', stiffness:1}}
+     id='error-text'>Please enter your details</motion.p>}
     
 
       <p>Card number</p>
-      <input
+      <motion.input
+       variants={inputVariants}
+       whileFocus='focus'
       maxLength={19} 
       placeholder='e.g. 1234 5678 9123 0000'
       type="text" 
@@ -124,14 +141,20 @@ const cvcRef = useRef()
       className={numberError ? 'error' : 'normal' }
       onChange={(e)=> setCardNumber(e.target.value)}
       />
-    {numberError && <p id='error-text'>Please enter your details</p>}
+    {numberError && <motion.p 
+     variants={errorVariants}
+     animate='animationOne'
+     transition={{type:'spring', stiffness:1}}
+    id='error-text'>Please enter your details</motion.p>}
 
        <div className="cvc-date">
 
        
 <div className="date-inputs">
 <p>exp.date (MM/YY) </p>
-<input 
+<motion.input
+ variants={inputVariants}
+ whileFocus='focus' 
   maxLength={2}
   placeholder='MM'
   className={monthError ? 'error' : 'normal' }
@@ -140,7 +163,9 @@ const cvcRef = useRef()
   onChange={(e)=> setMonth(e.target.value)}
   />
 
-<input 
+<motion.input 
+ variants={inputVariants}
+ whileFocus='focus'
   maxLength={2}
   placeholder='YY'
   id='year'
@@ -153,7 +178,9 @@ const cvcRef = useRef()
 
 <div className="cvc">
   <p>cvc</p>
-  <input 
+  <motion.input 
+   variants={inputVariants}
+   whileFocus='focus'
   maxLength={3}
   placeholder='e.g. 123'
   type="text" 
@@ -175,14 +202,16 @@ const cvcRef = useRef()
      
 
       <div className="btn">
-      <button>Confirm</button>
+      <motion.button
+      whileHover={{scale:1.1}}
+      >CONFIRM</motion.button>
       </div>
 
 
     </form>
 
 
-  </div>
+  </motion.div>
 
 
    

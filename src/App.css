@@ -120,6 +120,7 @@ left: 123px;
 
 }
 
+
 @media  screen and (min-width:360px){
 
   body{
@@ -318,6 +319,50 @@ left: 174px;
 }
 }
 
+@media  screen and (min-width:430px){
+
+
+.back-of-card p{
+  position: absolute;
+top: 60px;
+left: 185px;
+}
+
+
+.front-of-card{
+  top: 193px;
+}
+
+
+.cardBody{
+  position: absolute;
+  top: 28px;
+  left: 24px; 
+}
+}
+
+
+@media screen and (min-width:440px){
+
+.back-of-card p{
+  position: absolute;
+top: 62px;
+left: 188px;
+}
+
+
+.front-of-card{
+  top: 196px;
+}
+
+
+.cardBody{
+  position: absolute;
+  top: 32px;
+  left: 27px; 
+}
+}
+
 @media screen and (min-width:450px){
   body{
     font-size: 20px;
@@ -376,6 +421,7 @@ left: 202px;
     left: 30px; 
   }
   }
+
 
 
 @media screen and (min-width:500px){
@@ -474,7 +520,7 @@ left: 230px;
 
 @media screen and (min-width:760px){
   body{
-    height: 100vh;
+    height: 102vh;
     background-image: url('/src/images/bg-main-desktop.png');
     background-repeat: no-repeat;
     background-size: 25% 100%;
